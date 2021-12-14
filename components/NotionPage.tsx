@@ -6,7 +6,7 @@ import cs from 'classnames'
 import { useRouter } from 'next/router'
 import { useSearchParam } from 'react-use'
 import BodyClassName from 'react-body-classname'
-import useDarkMode from 'use-dark-mode'
+// import useDarkMode from 'use-dark-mode'
 import { PageBlock } from 'notion-types'
 
 import { Tweet, TwitterContextProvider } from 'react-static-tweets'
@@ -88,7 +88,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const isLiteMode = lite === 'true'
   const searchParams = new URLSearchParams(params)
 
-  const darkMode = useDarkMode(false, { classNameDark: 'dark-mode' })
+  const darkMode = { value: false } // useDarkMode(false, { classNameDark: 'dark-mode' })
 
   if (router.isFallback) {
     return <Loading />
@@ -274,8 +274,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
         pageAside={pageAside}
         footer={
           <Footer
-            isDarkMode={darkMode.value}
-            toggleDarkMode={darkMode.toggle}
+          // isDarkMode={darkMode.value}
+          // toggleDarkMode={darkMode.toggle}
           />
         }
       />

@@ -7,9 +7,9 @@ module.exports = {
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: null, // 'Transitive Bullshit',
+  name: 'AGESCI Piove Di Sacco 2', // 'Transitive Bullshit',
   domain: null, // 'transitivebullsh.it',
-  author: null, // 'Travis Fischer',
+  author: 'Marco Giraldo', // 'Travis Fischer',
 
   // open graph metadata (optional)
   description: null, // 'Example site description',
@@ -20,6 +20,8 @@ module.exports = {
   twitter: null, // 'transitive_bs',
   github: null, // 'transitive-bullshit',
   linkedin: null, // 'fisch2',
+  facebook: 'agesci.piove2',
+  instagram: 'agesci_piove2',
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
